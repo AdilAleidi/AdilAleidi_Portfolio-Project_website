@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #434444;
+        stroke: #357dbb;
+        stroke-linecap: square;
+        stroke-linejoin: bevel;
+        stroke-width: 11px;
+        stroke-dasharray: 0.001 22;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 100px;
+        filter: url(#filter);
+        fill: #fff;
+        font-family: Apple-Chancery, "Apple Chancery";
+      }
+
+      .cls-3 {
+        font-size: 300px;
+        filter: url(#filter-2);
+        fill: #010101;
+        font-family: "Savoye LET";
+      }
+    </style>
+    <filter id="filter" x="495" y="400" width="138" height="101" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="3" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.646"/>
+      <feFlood result="flood" flood-opacity="0.35"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="294" y="342" width="222" height="218" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="3" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.646"/>
+      <feFlood result="flood" flood-opacity="0.35"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feFlood result="flood-2"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feOffset result="offset-2" dx="-22.404" dy="-44.7"/>
+      <feOffset result="offset-3" dx="22.404" dy="44.7" in="composite-2"/>
+      <feComposite result="composite-3" operator="xor" in="offset-2"/>
+      <feComposite result="composite-6" operator="xor" in2="composite-2"/>
+      <feComposite result="composite-4" operator="in" in2="SourceAlpha"/>
+      <feGaussianBlur result="blur-2" stdDeviation="8.944"/>
+      <feComponentTransfer result="comp">
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feComposite result="composite-5" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+  </defs>
+  <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M499.912,694.25L288.389,572.127V327.881L499.912,205.758,711.436,327.881V572.127Z"/>
+  <text id="dil" class="cls-2" x="498.805" y="492.781">dil</text>
+  <text id="A" class="cls-3" x="316" y="544.688">A</text>
+</svg>
